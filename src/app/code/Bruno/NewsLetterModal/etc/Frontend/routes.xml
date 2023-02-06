@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+
+<config>
+    <router id="standard">
+        <route id="newsletter" frontName="newsletter">
+            <module name="Bruno_NewsLetterModal"/>
+        </route>
+    </router>
+</config>

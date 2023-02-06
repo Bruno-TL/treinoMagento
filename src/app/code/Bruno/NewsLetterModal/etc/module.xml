@@ -1,0 +1,4 @@
+<config xmlns:xsi="...." xsi:noNamespaceSchemaLocation="...">
+    <module name="Bruno_NewsLetterModal" setup_version="0.0.1">
+    </module>
+</config>

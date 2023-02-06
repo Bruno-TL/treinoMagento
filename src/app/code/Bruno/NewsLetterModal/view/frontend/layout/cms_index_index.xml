@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="" ?>
+<page xmlns:xsi=".." xsi:noNamespaseSchemaLocation="..">
+    <body>
+        <referenceContainer name="content">
+            <block class="Bruno\NewsLetterModal\Bock\Modal" template="Bruno_NewsLetterModal::modal.phtml" name="nwesletter-modal" as="newsletter-modal"/>
+        </referenceContainer>
+    </body>
+</page>
