@@ -6,6 +6,6 @@ class Name implements NameInterface
 {
     public function getName()
     {
-        return 'My name is Darth Vader';
+        return 'Darth Vader';
     }
 }

@@ -9,6 +9,17 @@
     <!-- For é informado a interface que será usada.
          type a classe que será utilizada.
     -->
-    <preference for="Interface\InterfaceModule\Api\NameInterface" type="Interface\InterfaceModule\Model\Name" />
+    <preference for="Interfaces\InterfaceModule\Api\NameInterface" type="Interfaces\InterfaceModule\Model\Name" />
+
+    <!-- name => Classe alvo, a classe que queremos alterar os parametros do seu construtor-->
+    <type name="Interfaces\InterfaceModule\Model\Product\Shoe">
+        <arguments>
+            <!-- name=> o parametro/variavel que desejamos interceptar e alterar-->
+            <argument name="name" xsi:type="object">
+                <!-- O valor do novo type( Ver o type em <preference> na linha 12. -->
+                Interfaces\InterfaceModule\Model\SubName
+            </argument>
+        </arguments>
+    </type>
 
 </config>
