@@ -22,4 +22,20 @@
         </arguments>
     </type>
 
+    <!-- name => Classe alvo, a classe que queremos alterar os parametros do seu construtor-->
+    <type name="Interfaces\InterfaceModule\Model\Product\Shirt">
+        <arguments>
+            <!-- name=> o parametro/variavel que desejamos interceptar e alterar-->
+            <argument name="typeText" xsi:type="string">
+                Deu bom
+            </argument>
+            <argument name="typeNumber" xsi:type="number">2023</argument>
+            <argument name="typeArray" xsi:type="array">
+                <item name="customName" xsi:type="string">TOim</item>
+                <item name="customColor" xsi:type="string">Azul</item>
+            </argument>
+            <argument name="typeInitParameter" xsi:type="init_parameter">Interfaces\InterfaceModule\Model\Product\Shirt::MY_CONSTANT</argument>
+        </arguments>
+    </type>
+
 </config>
