@@ -9,6 +9,8 @@
     <!-- For é informado a interface que será usada.
          type a classe que será utilizada.
     -->
+
+    <!-- Toda vez que chamarem o NameInterface utilize a classe Name   -->
     <preference for="Interfaces\InterfaceModule\Api\NameInterface" type="Interfaces\InterfaceModule\Model\Name" />
 
     <!-- name => Classe alvo, a classe que queremos alterar os parametros do seu construtor-->
@@ -21,6 +23,17 @@
             </argument>
         </arguments>
     </type>
+
+    <!-- Virtual types - funcionalidade dentro do di(dependens injection
+     Inserir dependencias em uma classe já existente sem afetar outras classes-->
+
+    <virtualType name="typeMaterial" type="Interfaces\InterfaceModule\Model\SizeGreat">
+        <argument name="material" xsi:type="object">
+            Interfaces\InterfaceModule\Model\MaterialSynthetic
+        </argument>
+    </virtualType>
+
+
 
     <!-- name => Classe alvo, a classe que queremos alterar os parametros do seu construtor-->
     <type name="Interfaces\InterfaceModule\Model\Product\Shirt">

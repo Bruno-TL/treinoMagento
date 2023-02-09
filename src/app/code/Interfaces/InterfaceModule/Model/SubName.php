@@ -6,8 +6,14 @@ use Interfaces\InterfaceModule\Api\NameInterface;
 
 class SubName implements NameInterface
 {
-    public function getName()
+    protected $sobreName;
+
+    public function __construct(NameInterface $sobreName)
     {
-        return 'Anakin';
+        $this->sobreName = $sobreName;
+    }
+    public function getName($sobreName = 'Anakin')
+    {
+        return $this->sobreName = $sobreName;
     }
 }
