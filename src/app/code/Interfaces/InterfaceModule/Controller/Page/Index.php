@@ -25,6 +25,13 @@ class Index extends Action
 
     public function execute()
     {
-        echo $this->product->getShoe() . " " . $this->name->getName() . " " . $this->shirt;
+//        echo $this->product->getShoe() . " " . $this->name->getName() . " " . $this->shirt;
+
+//        Fazendo o plugin ser executado
+        $objectManager = \Magento\Framewokr\App\ObjectManager::getInstancer();
+        $product = $objectManager->create('Magento\Catalog\Model\Product')->load(2);
+        $product->setName('Samsung Galaxy');
+        $productName = $product->getName();
+
     }
 }

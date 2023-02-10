@@ -50,5 +50,13 @@
             <argument name="typeInitParameter" xsi:type="init_parameter">Interfaces\InterfaceModule\Model\Product\Shirt::MY_CONSTANT</argument>
         </arguments>
     </type>
+    <!-- O plugin é um interceptor que utilizamos para modificar o comportamento de métodos públicos -->
+    <!--  Plugin before  -->
+    <!-- name= caminho da classe no qual quero inteceptar classe alvo/setar a classe   -->
+    <type name="Magento\Catalog\Model\Product">
+<!--  name = nome do plugin pode da qualquer nome   -->
+<!-- type = Aonde estará o plugin before -->
+        <plugin name="formage-learning-plugin" type="Interfaces\InterfaceModule\Plugin\PluginOne" sortOrder="1" disabled="false" />
+    </type>
 
 </config>
